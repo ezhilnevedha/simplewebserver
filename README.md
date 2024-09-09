@@ -1,5 +1,5 @@
 # EX01 Developing a Simple Webserver
-## Date:
+## Date: 09-09-2024
 
 ## AIM:
 To develop a simple webserver to serve html pages and display the configuration details of laptop.
@@ -21,9 +21,44 @@ Serving the HTML pages.
 Testing the webserver.
 
 ## PROGRAM:
+```
+from http.server import HTTPServer,BaseHTTPRequestHandler
 
+content='''
+<!doctype html>
+<html>
+<head>
+<title> My Web Server</title>
+</head>
+<body>
+<h1>Top Five Web Application Development Frameworks</h1>
+<h2>1. Django</h2>
+<h2>2. MEAN Stack</h2>
+<h2>3. React</h2>
+<h2>4. Ruby on Rails </h2>
+<h2>5. Spring </h2>
+</body>
+</html>
+'''
+
+class MyServer(BaseHTTPRequestHandler):
+    def do_GET(self):
+        print("Get request received...")
+        self.send_response(200) 
+        self.send_header("content-type", "text/html")       
+        self.end_headers()
+        self.wfile.write(content.encode())
+
+print("This is my webserver") 
+server_address =('',8000)
+httpd = HTTPServer(server_address,MyServer)
+httpd.serve_forever()
+```
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/203fb950-f3d1-4296-bbec-3a4bd5b0705b)
+
+![image](https://github.com/user-attachments/assets/15377e8e-229b-4d21-90d5-0c9c89d2d325)
 
 
 ## RESULT:
