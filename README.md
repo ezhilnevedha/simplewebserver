@@ -1,5 +1,5 @@
 # EX01 Developing a Simple Webserver
-## Date: 18-09-2024
+## Date: 23-09-2024
 
 ## AIM:
 To develop a simple webserver to serve html pages and display the configuration details of laptop.
@@ -68,8 +68,10 @@ httpd.serve_forever()
 ```
 
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/0607e287-2970-4fab-afd1-050e82e5a00f)
-![image](https://github.com/user-attachments/assets/db259c35-d233-433b-ac1d-7c89f0e55526)
+![image](https://github.com/user-attachments/assets/5a218253-d83c-49f8-a84e-7b52c85eb48f)
+![image](https://github.com/user-attachments/assets/14dcd8c9-2751-4009-8389-4809b8315148)
+![image](https://github.com/user-attachments/assets/2c392fcb-f263-48ee-a9cf-f988d45d05ce)
+
 
 
 
